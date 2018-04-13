@@ -47,17 +47,6 @@ F 3 "" H 1350 4150 50  0001 C CNN
 	1    1200 4200
 	1    0    0    -1  
 $EndComp
-$Comp
-L KLIB_Interface:CP2102 U4
-U 1 1 5ABE9A5D
-P 4000 4200
-F 0 "U4" H 4200 5150 50  0000 L CNN
-F 1 "CP2102" H 4200 5050 50  0000 L CNN
-F 2 "Housings_DFN_QFN:QFN-28-1EP_5x5mm_Pitch0.5mm" H 4200 3250 50  0001 L CNN
-F 3 "https://www.silabs.com/documents/public/data-sheets/CP2102-9.pdf" H 4200 3150 50  0001 L CNN
-	1    4000 4200
-	1    0    0    -1  
-$EndComp
 Text Label 1500 4200 0    50   ~ 0
 USB+
 Text Label 1500 4300 0    50   ~ 0
@@ -116,23 +105,23 @@ $EndComp
 $Comp
 L KLIB_Power:GND #PWR019
 U 1 1 5ABEB253
-P 4100 5200
-F 0 "#PWR019" H 4100 5000 50  0001 C CNN
-F 1 "GND" H 4105 5027 50  0000 C CNN
-F 2 "" H 4100 5200 50  0001 C CNN
-F 3 "" H 4100 5200 50  0001 C CNN
-	1    4100 5200
+P 4100 5100
+F 0 "#PWR019" H 4100 4900 50  0001 C CNN
+F 1 "GND" H 4105 4927 50  0000 C CNN
+F 2 "" H 4100 5100 50  0001 C CNN
+F 3 "" H 4100 5100 50  0001 C CNN
+	1    4100 5100
 	1    0    0    -1  
 $EndComp
 $Comp
 L KLIB_Power:GND #PWR017
 U 1 1 5ABEB288
-P 3900 5200
-F 0 "#PWR017" H 3900 5000 50  0001 C CNN
-F 1 "GND" H 3905 5027 50  0000 C CNN
-F 2 "" H 3900 5200 50  0001 C CNN
-F 3 "" H 3900 5200 50  0001 C CNN
-	1    3900 5200
+P 3900 5100
+F 0 "#PWR017" H 3900 4900 50  0001 C CNN
+F 1 "GND" H 3905 4927 50  0000 C CNN
+F 2 "" H 3900 5100 50  0001 C CNN
+F 3 "" H 3900 5100 50  0001 C CNN
+	1    3900 5100
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -243,17 +232,17 @@ Connection ~ 2950 4250
 Connection ~ 2950 3300
 Wire Wire Line
 	2950 3300 3250 3300
-Text Label 5200 3700 2    50   ~ 0
+Text Label 4650 3600 0    50   ~ 0
 USB_UART_TX
-Text Label 5200 3800 2    50   ~ 0
+Text Label 4650 3700 0    50   ~ 0
 USB_UART_RX
-Text Label 5200 4000 2    50   ~ 0
+Text Label 4650 3900 0    50   ~ 0
 USB_UART_RTS
-Text Label 5200 4100 2    50   ~ 0
+Text Label 4650 4000 0    50   ~ 0
 USB_USRT_CTS
-NoConn ~ 4600 4800
+NoConn ~ 4600 4100
 NoConn ~ 4600 4700
-NoConn ~ 4600 4500
+NoConn ~ 4600 4600
 NoConn ~ 4600 4400
 NoConn ~ 4600 4300
 NoConn ~ 4600 4200
@@ -930,29 +919,13 @@ Wire Wire Line
 Wire Wire Line
 	4150 1700 6800 1700
 Wire Wire Line
-	5250 3700 5250 2200
-Wire Wire Line
-	4600 3700 5250 3700
-Wire Wire Line
-	5350 3800 5350 2300
-Wire Wire Line
-	4600 3800 5350 3800
-Wire Wire Line
 	6800 2200 5250 2200
 Wire Wire Line
 	6800 2300 5350 2300
 Wire Wire Line
-	5450 4000 5450 2400
-Wire Wire Line
 	5450 2400 6800 2400
 Wire Wire Line
-	4600 4000 5450 4000
-Wire Wire Line
-	5550 4100 5550 2500
-Wire Wire Line
 	5550 2500 6800 2500
-Wire Wire Line
-	4600 4100 5550 4100
 Entry Wire Line
 	7450 4450 7550 4550
 Entry Wire Line
@@ -1081,6 +1054,33 @@ Wire Wire Line
 Wire Wire Line
 	2600 1800 1900 1800
 Connection ~ 1900 1800
+Wire Wire Line
+	4600 3600 5250 3600
+Wire Wire Line
+	5250 3600 5250 2200
+Wire Wire Line
+	4600 3900 5450 3900
+Wire Wire Line
+	5450 3900 5450 2400
+Wire Wire Line
+	5550 4000 5550 2500
+Wire Wire Line
+	4600 4000 5550 4000
+Wire Wire Line
+	5350 3700 5350 2300
+Wire Wire Line
+	4600 3700 5350 3700
 Wire Bus Line
 	7450 3400 7450 5150
+$Comp
+L KLIB_Interface:CP2102 U4
+U 1 1 5AD4FD61
+P 4000 4200
+F 0 "U4" H 4200 5150 50  0000 L CNN
+F 1 "CP2102" H 4200 5050 50  0000 L CNN
+F 2 "Package_DFN_QFN:QFN-28-1EP_5x5mm_P0.5mm_EP3.35x3.35mm" H 4200 3350 50  0001 L CNN
+F 3 "https://www.silabs.com/documents/public/data-sheets/CP2102-9.pdf" H 4200 3150 50  0001 L CNN
+	1    4000 4200
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
