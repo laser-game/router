@@ -147,9 +147,9 @@ Wire Wire Line
 	10150 2150 10400 2150
 Wire Wire Line
 	10150 2250 10400 2250
-Text HLabel 10400 2150 2    50   Output ~ 0
-~RF_CONFIG
 Text HLabel 10400 2250 2    50   Output ~ 0
+~RF_CONFIG
+Text HLabel 10400 2150 2    50   Output ~ 0
 ~RF_ENABLE
 Text Label 1200 2150 0    50   ~ 0
 ~RST
