@@ -37,7 +37,7 @@ F 3 "https://www.rcscomponents.kiev.ua/datasheets/HM-TRP_433.pdf" V 3800 1850 50
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Connector_Specialized:USB_B J1
+L Connector:USB_B J1
 U 1 1 5ABE9679
 P 1200 4200
 F 0 "J1" H 1255 4667 50  0000 C CNN
@@ -317,7 +317,7 @@ F 3 "" H 2900 1300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector_Specialized:Conn_Coaxial J2
+L Connector:Conn_Coaxial J2
 U 1 1 5ABFBD92
 P 1650 1800
 F 0 "J2" H 1605 2038 50  0000 C CNN
@@ -340,8 +340,6 @@ F 3 "" H 1650 2300 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	1650 2300 1650 2000
-Wire Wire Line
-	1800 1800 1900 1800
 $Comp
 L Device:D_TVS D1
 U 1 1 5ABFDC8A
@@ -1053,7 +1051,6 @@ Wire Wire Line
 	4200 1900 6800 1900
 Wire Wire Line
 	2600 1800 1900 1800
-Connection ~ 1900 1800
 Wire Wire Line
 	4600 3600 5250 3600
 Wire Wire Line
@@ -1070,8 +1067,6 @@ Wire Wire Line
 	5350 3700 5350 2300
 Wire Wire Line
 	4600 3700 5350 3700
-Wire Bus Line
-	7450 3400 7450 5150
 $Comp
 L KLIB_Interface:CP2102 U4
 U 1 1 5AD4FD61
@@ -1083,4 +1078,9 @@ F 3 "https://www.silabs.com/documents/public/data-sheets/CP2102-9.pdf" H 4200 31
 	1    4000 4200
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	1850 1800 1900 1800
+Wire Bus Line
+	7450 3400 7450 5150
+Connection ~ 1900 1800
 $EndSCHEMATC
