@@ -3,4 +3,4 @@
 # Router
 Devices for route wireless communication between the control computer and laser game devices.
 
-<img src="/fab/placement_top.svg" width="500", title="placement_top">
+<img src="/fab/placement_top.svg" width="500" title="placement_top">
